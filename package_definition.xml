@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SystemDefinition schema="3.0.0">
+  <package id="networkingdm" name="Networking Device Management" levels="dm cp">
+    <collection id="clientprovisioning" name="Client Provisioning" level="cp">
+      <component id="accesspointadapter" filter="s60" name="Access Point Adapter" class="plugin">
+        <unit bldFile="clientprovisioning/accesspointadapter/group"/>
+      </component>
+      <component id="cpdestinationnwadapter" filter="s60" name="Destination Network Adapter" class="plugin">
+        <unit bldFile="clientprovisioning/cpdestinationnwadapter/group"/>
+      </component>
+    </collection>
+    <collection id="devicemanagement" name="Device Management" level="dm">
+      <component id="globalwlansettings" filter="s60" name="DM Global WLAN Adapter" class="plugin">
+        <unit bldFile="devicemanagement/globalwlansettings/group"/>
+      </component>
+      <component id="nsmldinternet" filter="s60" name="DM Internet Adapter" class="plugin">
+        <unit bldFile="devicemanagement/nsmldinternet/group"/>
+      </component>
+      <component id="nsmldmalwaysonadapter" filter="s60" name="DM Always On Adapter" class="plugin">
+        <unit bldFile="devicemanagement/nsmldmalwaysonadapter/group"/>
+      </component>
+      <component id="nsmldmbmadapter" filter="s60" name="DM Bearer Management Adapter" class="plugin">
+        <unit bldFile="devicemanagement/nsmldmbmadapter/group"/>
+      </component>
+    </collection>
+  </package>
+</SystemDefinition>
